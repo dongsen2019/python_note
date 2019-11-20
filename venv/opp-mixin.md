@@ -17,4 +17,13 @@
     - 可以方便地组织和维护不同功能组件的划分
     - 可以根据需要任意调整功能类的组合
     - 可以避免创建很多新的类，导致类的继承混乱
+
+# 类相关函数
+- issubclass:检测一个类是否是另一个类的派生类
+- isinstance:检测一个对象是否是一个类的实例
+- hasattr:检测一个对象是否由成员XXX
+- getattr: get attribute
+- setattr: get attribute
+- delattr: delete attribute
+- dir: 获取对象的成员列表
    
