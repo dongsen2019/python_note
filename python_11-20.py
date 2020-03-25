@@ -1,6 +1,6 @@
 # lesson 11
 # 集合的定义方式
-s1 = {1,2,3}   
+s1 = {1,2,3}
 s2 = set([1,2,3])
 print(s1)
 print(s2)
@@ -23,4 +23,28 @@ print(a - b)
 print(a | b)
 # 对称集合 {2, 33, 3, 'b', 22}
 print(a ^ b)
+
+# lesson 12
+# 数据类型转换函数汇总
+
+'''
+str()
+int()
+float()
+bool()
+list()
+tuple()
+dict()
+set()
+'''
+
+# lesson 13
+# 容器类型转换函数汇总
+# 容器类型的转换函数只能转换可迭代的数据类型（容器类型的构造函数只能接受可迭代的数据类型参数）
+'''
+list()
+tuple()
+dict()
+set()
+'''
 
