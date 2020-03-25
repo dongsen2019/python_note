@@ -32,7 +32,7 @@ a = ('abc')
 b = ("abc", )
 
 print(a, type(a))
-print(b, type(b)) 
+print(b, type(b))
 
 # lesson 8
 # list定义使用[]，且列表中的数据类型可以是不同的，且列表可嵌套列表
