@@ -1,15 +1,15 @@
 # lesson 11
 # 集合的定义方式
-s1 = {1,2,3}
-s2 = set([1,2,3])
+s1 = {1, 2, 3}
+s2 = set([1, 2, 3])
 print(s1)
 print(s2)
 
 # 特别的,如果要定义一个空集合，需要用set(),因为使用{}定义，会是一个空的字典
 s1 = {}
-print(s1,type(s1))
+print(s1, type(s1))
 s2 = set()
-print(s2,type(s2))
+print(s2, type(s2))
 
 # 集合主要用于运算,交集,差集,并集和对称集合
 a = {1, 2, 3, 'a', 'b'}
@@ -52,5 +52,19 @@ set()
 # 因为list的改变可能会使集合元素重复，同理也不能用list元素构建元祖
 a = {(1, 2), (3, 4)}
 print(dict(a))
+
+# lesson 15
+# and   or    not
+print(40 and 30)  # 30
+print(10 or 20)   # 10
+print(0 or 10)  # 10
+print(not 10)  # false
+
+# lesson 17
+# 成员运算符：in    not in
+# 身份运算符：is    is not  比较两个对象是不是同一个内存地址
+s = "dongsen"
+print('gs' in s)
+
 
 
