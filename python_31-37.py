@@ -70,7 +70,7 @@ __doc__  ==> 当前脚本的文档说明 在当前脚本当中的第一个 三�
     '__annotations__': {}, 
     '__builtins__': <module 
     'builtins' (built-in)>, 
-    '__file__': 'E:/pycharm/pythonspace/python_31-40.py', 
+    '__file__': 'E:/pycharm/pythonspace/python_31-37.py', 
     '__cached__': None, 
     'n': 11, 'f': <function f at 0x00000000003EC1E0>, 'i': 13
 }
