@@ -31,7 +31,7 @@ iter()
     能被next()函数调用，并不断返回下一个值的对象称为迭代器(Iterator 迭代器对象)
 """
 arr = [1,2,3,4]
-res = iter(arr) #iter()返回容器的begin()
+res = iter(arr)  # iter()返回容器的地址，不是begin()，因为用*可以进行解包操作
 print(next(res))
 print(next(res))
 print(next(res))
