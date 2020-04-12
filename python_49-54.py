@@ -211,6 +211,7 @@ print(vars.replace("dong", "DONG",2))
 
 # str.center() 字符串居中，两侧填充字符
 vars = "dancing"
-print(vars.center(20,'*'))
-print(vars.ljust(15,'*'))
-print(vars.rjust(15,'*'))
+print(vars.center(20, '*'))
+print(vars.ljust(15, '*'))
+print(vars.rjust(15, '*'))
+
