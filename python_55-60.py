@@ -65,3 +65,5 @@ del lst[2:7:2]
 print(lst)
 
 
+
+
