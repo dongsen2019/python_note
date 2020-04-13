@@ -176,13 +176,28 @@ print(lst)
 
 # 带有判断条件的列表推导式
 # [含x的处理表达式 for x in 迭代对象 if判断表达式]
+
 lst = [x for x in range(10) if x % 2 == 0]
 print(lst)
+
 
 # 带有条件判断的多循环的推导式
 # [1,2,3],[3,1,4] ==> 求笛卡尔积
 
+lst = [(x, y) for x in [1, 2, 3] for y in [3, 1, 4]]
+print(lst)
 
+# 列表的嵌套推导式
+
+# 行列转置
+lst = [
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12]
+]
+
+res = [[row[i] for row in lst] for i in range(0, 4)]
+print(res)
 
 
 
