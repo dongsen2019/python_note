@@ -64,6 +64,125 @@ lst = [0, 1, 2, 3, 4, 5, 6, 7]
 del lst[2:7:2]
 print(lst)
 
+# lesson 57
+# list相关方法
+
+# list.insert()在指定的索引位置添加新元素
+lst = [0, 1, 2, 3, 4, 5, 6, 7]
+lst.insert(1,'a')
+print(lst)
+
+# list.pop() 出栈操作，弹出最后元素，返回出栈元素
+#            也可以指定索引号的元素出栈
+lst = [0, 1, 2, 3, 4, 5, 6, 7]
+print(lst.pop())
+lst.pop(1)
+print(lst)
+
+# list.remove(x) 删除list中第一个 list[i] 等于 x 的项目。
+#                如果找不到该内容的元素，则报错
+lst = [0, 1, 2, 3, 4, 5, 6, 7]
+lst.remove(5)
+print(lst)
+# list.remove(9) # ValueError: list.remove(x): x not in list
+
+
+# list.index(x[,start[,end]]) 查找指定元素在列表中第一次出现的索引位置
+#                             也可以在指定的区间内查找,找不到报错
+lst = [0, 1, 2, 3, 4, 5, 6, 7]
+lst.index(7)
+# print(lst.index(6,1,6))  # ValueError: 6 is not in list
+
+# extend() 延展容器，接收一个容器类型的数据，把容器中的元素追加到元列表中
+lst = [0, 1, 2, 3, 4, 5, 6, 7]
+lst.extend((2,3,4))
+print(lst)
+
+# clear() 清空列表
+
+# reverse() 列表翻转
+
+# sort()  和通用算法sorted()区别就是，sorted()返回一个排序后的副本
+# 方法和sorted()一样
+lst = [6, -1, 8, -3, 9, -5, 6, 7]
+lst.sort(key=abs, reverse=True)
+print(lst)
+
+# copy() 拷贝，复制当前的列表，制作一份副本
+
+lst = [1, 2, 3]
+res = lst.copy()
+del res[1]
+print(lst)
+print(res)
+
+"""
+对于一维列表这样删除副本内容不影响原数据内容
+对于二维列表这样操作则不行
+"""
+
+# 二维列表
+lst = [1, 2, 3, [11, 22, 33]]
+res = lst.copy()
+print(lst[3], id(lst[3]))
+print(res[3], id(res[3]))
+del res[3][1]
+print(lst)
+print(res)
+
+"""
+原因可能是copy()方法只是复制了列表的地址
+"""
+
+# lesson 58
+# 深度复制
+lst = [1, 2, 3, [11, 22, 33]]
+res = lst.copy()
+res[3] = lst[3].copy()
+del res[3][1]
+print(lst)
+print(res)
+
+# 可以使用 copy 模块简化操作深度拷贝
+import copy
+lst = [1, 2, 3, [11, 22, 33]]
+res = copy.deepcopy(lst)
+print(lst[3], id(lst[3]))
+print(res[3], id(res[3]))
+# [11, 22, 33] 55148744
+# [11, 22, 33] 55169608
+
+# lesson 59
+# 列表推导式
+
+# 普通方法
+lst = []
+for x in range(0, 10):
+    lst.append(x**2)
+print(lst)
+
+# 使用map函数和list完成
+lst = list(map(lambda x: x**2, range(0, 10)))
+print(lst)
+
+# 使用列表推导式完成
+lst = [i**2 for i in range(10)]
+print(lst)
+
+# 列表推导式案例1
+str1 = '1234'
+lst = [int(x)*2 for x in str1]
+print(lst)
+
+# 带有判断条件的列表推导式
+# [含x的处理表达式 for x in 迭代对象 if判断表达式]
+lst = [x for x in range(10) if x % 2 == 0]
+print(lst)
+
+# 带有条件判断的多循环的推导式
+# [1,2,3],[3,1,4] ==> 求笛卡尔积
+
+
 
 
 
