@@ -69,7 +69,7 @@ print(lst)
 
 # list.insert()在指定的索引位置添加新元素
 lst = [0, 1, 2, 3, 4, 5, 6, 7]
-lst.insert(1,'a')
+lst.insert(1, 'a')
 print(lst)
 
 # list.pop() 出栈操作，弹出最后元素，返回出栈元素
