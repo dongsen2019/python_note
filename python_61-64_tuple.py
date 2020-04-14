@@ -76,3 +76,61 @@ newt = (i**2 for i in varlist)
 for i in newt:
     print(i)
 
+
+# lesson 63
+# yield 关键字
+
+"""
+yield 关键字使用在 生成器函数中
+    + yield 和函数中的 return 有点像
+    + 共同点：执行到这个关键字后会把结果返回
+    + 不同点：
+        + return 会把结果，并结束当前函数的调用
+        + yield 会返回结果，并记住当前代码执行的位置，下一次调用时会从上一次离开的位置继续向下执行
+"""
+
+# 使用 yield 定义一个 生成器函数
+
+
+def hello():
+    print("hello 1")
+    yield 1
+    print("hello 2")
+    yield 2
+    print("hello 3")
+    yield 3
+
+
+res = hello()
+
+
+for i in res:
+    print(i)
+
+
+# lesson 64
+# 使用 生成器 改写 斐波那契数列
+# 0,1,1,2,3,5,8,13,21,34,55,89
+
+def fibo(n):
+    x = 0
+    y = 1
+    if n == 1:
+        yield 0
+    elif n == 2:
+        yield 1
+    else:
+        print(0, 1, end=' ')
+        for i in range(3, n+1):
+            z = x + y
+            x, y = y, z
+            yield z
+
+
+res = fibo(20)
+for i in res:
+    print(i, end=' ')
+
+
+
+
