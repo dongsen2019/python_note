@@ -134,6 +134,7 @@ res = random.uniform(5, 10)
 res = random.choice('123')
 res = random.choice([1,2,3,4])
 
+
 # random.shuffle() 随机打乱当前列表中的值，没有返回值，直接打乱数据源
 lst = [1, 2, 3, 4]
 random.shuffle(lst)
