@@ -39,3 +39,4 @@ res = os.path.exists("../pythonspace/test.py") # True
 # res = os.path.samefile(a, b)
 print(res)
 
+
