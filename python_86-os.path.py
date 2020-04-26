@@ -1,4 +1,4 @@
-# os.path   系统模块中的路径模块
+# lesson 86 os.path   系统模块中的路径模块
 
 import os
 
