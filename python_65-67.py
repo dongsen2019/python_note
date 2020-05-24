@@ -88,7 +88,7 @@ print(vardict)
 
 # dict.copy() 返回字典的浅拷贝
 
-# dict.get()获取一个元素，存在则返回，不存在默认返回None,也可以由第二参数指定返回内容
+# dict.get()获取一个元素，存在则返回改键所对应的值，不存在默认返回None,也可以由第二参数指定返回内容
 # 使用key获取字典中不存在的键值，会报错
 vardict = {'a': 1, 'b': 2, 'c': 3}
 res = vardict.get('bb', 'avvv')
