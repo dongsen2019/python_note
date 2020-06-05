@@ -11,7 +11,7 @@ import random
 import time
 import queue
 
-class Food():
+class Food(): 
     """定义食物，食物包含基本属性和创建食物方法"""
     def __init__(self, queue, scrnwidth, scrnheight):
         # [1] 定义食物的宽度和高度
