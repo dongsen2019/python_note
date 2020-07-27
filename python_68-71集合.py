@@ -121,3 +121,5 @@ print(newset)
 # issubset() 检测是否为子集
 
 # isdisjoint 检测是否不相交，不相交返回True，相交返回False
+
+
