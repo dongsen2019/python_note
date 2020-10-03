@@ -39,6 +39,7 @@ class Food():
         self.exppos = x1, y1, x2, y2
         self.queue.put({"food": self.exppos})
 
+
 class Snake(threading.Thread):
     """定义蛇"""
     def __init__(self, gui, queue, canvas, scrnwidth, scrnheight):
