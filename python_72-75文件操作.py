@@ -123,7 +123,7 @@ with open("./1.txt", 'a+', encoding="utf-8") as fp:
 
 # 写入相关函数
 
-varstr = 5211 # write() argument must be str, not int
+varstr = 5211  # write() argument must be str, not int
 with open("./2.txt", 'w', encoding="utf-8") as fp:
     fp.write(varstr)  # write()只能写入str类型的数据
     fp.writelines(varstr)  # 可以写入容器类型数据，注意容器中的元素也必须是字符串
@@ -132,15 +132,15 @@ with open("./2.txt", 'w', encoding="utf-8") as fp:
 # 读取相关函数
 with open("./2.txt", 'r', encoding="utf-8") as fp:
     res = fp.read()  # 默认从当前指针位置读取
-    res = fp.read(3) # 设置读取字节的长度
-    res = fp.readline() # 读取一行
-    res = fp.readlines() # 一次读取多行数据，每行作为一个元素
+    res = fp.read(3)  # 设置读取字节的长度
+    res = fp.readline()  # 读取一行
+    res = fp.readlines()  # 一次读取多行数据，每行作为一个元素
 
 
 with open("./2.txt", 'r+', encoding="utf-8") as fp:
     # a+模式，指针默认在文件内容的最后，所以直接读是读取不到内容的
-    fp.seek(0) # 把文件指针设置到文件开头位置
-    fp.seek(10) # 设置指针的位置为10
+    fp.seek(0)  # 把文件指针设置到文件开头位置
+    fp.seek(10)  # 设置指针的位置为10
     fp.seek(0, 2)  # 0,2是文件指针设置在结尾
     # offset -- 开始的偏移量，也就是代表需要移动偏移的字节数
     # whence：可选，默认值为 0。给offset参数一个定义，表示要从哪个位置开始偏移；
